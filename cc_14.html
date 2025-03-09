@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Ticket System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f7f7f7;
+        }
+
+        header, footer {
+            background-color: #4A90E2;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Styling for the ticket container */
+        #ticketContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Customer Support Ticket System</h1>
+        <p>Manage and resolve customer support issues.</p>
+    </header>
+
+    <!-- Main Section with Ticket Container -->
+    <main>
+        <div id="ticketContainer">
+            <!-- Placeholder for dynamically added support tickets -->
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Support System, All rights reserved.</p>
+    </footer>
+
+    <script src="cc_14.js"></script>
+</body>
+</html>
