@@ -37,3 +37,9 @@ function highlightHighPriorityTickets() {
     ticket.style.border = '3px solid #f7b500'; // Change border color of high-priority tickets to yellow
     });
     }
+
+// Task 4: Implementing Ticket Resolution with Event Bubbling
+document.getElementById('ticketContainer').addEventListener('click', (event) => { 
+    event.stopPropagation(); // Stop the event from propagating to parent elements
+    console.log('Ticket container clicked!'); // Log message when the ticket container is clicked
+    });
