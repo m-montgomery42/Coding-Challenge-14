@@ -26,3 +26,14 @@ function addSupportTicket(customerName, issueDescription, priority) {
     resolveButton.textContent = 'Resolve'; // Set the button text to 'Resolve'
     resolveButton.setAttribute('class', 'resolve-btn'); // Add the class 'resolve-btn' for styling
     ticket.appendChild(resolveButton); // Append the resolve button to the ticket
+
+// Task 3: Converting NodeLists to Arrays for Bulk Updates
+function highlightHighPriorityTickets() { 
+    const highPriorityTickets = document.querySelectorAll('.high-priority'); // Get all tickets with 'high-priority' class
+    const highPriorityArray = Array.from(highPriorityTickets); // Convert NodeList to array
+    
+    
+    highPriorityArray.forEach(ticket => { 
+    ticket.style.border = '3px solid #f7b500'; // Change border color of high-priority tickets to yellow
+    });
+    }
